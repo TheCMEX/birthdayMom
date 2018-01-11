@@ -1,0 +1,41 @@
+p{
+    color: white;
+}
+.header{
+    background: url("/static/img/kiss.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 15%;
+    padding-bottom: 14%;
+}
+.brothers{
+    background: url("/static/img/brothers.jpg") no-repeat center;
+    background-size: cover;
+}
+.family{
+    background: url("/static/img/family.jpg") no-repeat center;
+    background-size: cover;
+}
+.yura{
+    background: url("/static/img/hAnuw_croper_ru.jpeg") no-repeat center;
+    background-size: cover;
+}
+.mark{
+    background: url("/static/img/mark.jpg") no-repeat center;
+    background-size: cover;
+}
+.love{
+    background: url("/static/img/love.jpg") no-repeat center;
+    background-size: cover;
+}
+.headerTitle{
+    font-size: 5vw;
+    font-family: RalewayBold;
+}
+.latest{
+    background: url("/static/img/latest.jpg") no-repeat center;
+    background-size: cover;
+}
+@font-face {
+    font-family: RalewayBold; /* Гарнитура шрифта */
+    src: url(/static/fonts/Raleway-Bold.ttf); /* Путь к файлу со шрифтом */
+}
