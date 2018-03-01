@@ -169,6 +169,19 @@ input{
 }
 
 
+/*БЛОК С ТРЕМЯ КНОПКАМИ НА ДЖАВАСКРИПТЕ*/
+
+
+.threeButtonsJS{
+    padding-top: 10%;
+}
+.threeButtons{
+    color: white;
+}
+.btn.threeButtons{
+    font-size: 1.3vw;
+}
+
 /*Медиа запросы*/
 @media screen and (min-width: 1200px) {
     body{
