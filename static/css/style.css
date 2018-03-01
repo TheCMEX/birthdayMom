@@ -181,7 +181,31 @@ input{
 .btn.threeButtons{
     font-size: 1.3vw;
 }
+.firstButton{
+    background-color: rgb(136, 136, 136);
+}
+.firstButton:hover{
+    background-color: #807f7f;
+}
+#btn_description{
+    padding-top: 4%;
+}
 
+/*Настраиваем текст в правой половине блока*/
+.p{
+    font-family: Circle55;
+    font-size: 2.4vw;
+    line-height: 1em;
+}
+.withoutComission{
+    font-family: Circle75;
+    font-size: 3.27vw;
+    line-height: 0.7em;
+}
+.forFewMinutes{
+    font-size: 3.05vw;
+    line-height: 0.4em;
+}
 /*Медиа запросы*/
 @media screen and (min-width: 1200px) {
     body{

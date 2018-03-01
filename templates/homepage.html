@@ -94,9 +94,18 @@
                         <div class="threeButtons">
                             <button id="find" onclick="make_active('find')" class="btn headerButtonNeedHelp threeButtons col-3 firstButton">Найти</button>
                             <button id="hire" onclick="make_active('hire')" class="btn threeButtons col-3 firstButton">Нанять</button>
-                            <button id="pay" onclick="make_active('pay')" class="btn threeButtons col-3">Заплатить</button>
+                            <button id="pay" onclick="make_active('pay')" class="btn threeButtons col-3 firstButton">Заплатить</button>
                         </div>
-                    <div id="btn_description" class="col-xl-5">Здесь вбивай текст описания кнопки Найти</div>
+                        <div id="btn_description">Мы заботимся о вас. Мы заключаем контракты и проводим оплату. Так вы будете знать наверняка, что всё сделано в соответствии с законодательством. Мы предлагаем разные способы оплаты, включая криптовалюты. Мы гарантируем безопасность при использовании функции "Безопасная сделка".</div>
+                    </div>
+                    <div class="col-xl-5">
+                        <div class="p">
+                            <p>Находите исполнителей</p>
+                            <p class="withoutComission">БЕЗ КОМИССИИ</p>
+                            <p class="forFewMinutes">за несколько минут</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <div class="col-xl-2"></div>
@@ -104,7 +113,7 @@
     </div>
     <script type="text/javascript">
 
-        var change_time = 6000;
+        var change_time = 8000;
         var timeout;
 
         function find_active(){
@@ -136,21 +145,21 @@
             if(id === 'find'){
                 make_inactive('hire');
                 make_inactive('pay');
-                document.getElementById('btn_description').innerHTML = 'Здесь вбивай текст описания кнопки Найти';
+                document.getElementById('btn_description').innerHTML = 'Мы заботимся о вас. Мы заключаем контракты и проводим оплату. Так вы будете знать наверняка, что всё сделано в соответствии с законодательством. Мы предлагаем разные способы оплаты, включая криптовалюты. Мы гарантируем безопасность при использовании функции "Безопасная сделка".';
                 clearTimeout(timeout);
                 hire_active()
             }
             if(id === 'hire'){
                 make_inactive('find');
                 make_inactive('pay');
-                document.getElementById('btn_description').innerHTML = 'Здесь вбивай текст описания кнопки Нанять';
+                document.getElementById('btn_description').innerHTML = 'Мы заботимся о вас. Мы заключаем контракты и проводим оплату. Так вы будете знать наверняка, что всё сделано в соответствии с законодательством. Мы предлагаем разные способы оплаты, включая криптовалюты. Мы гарантируем безопасность при использовании функции "Безопасная сделка".';
                 clearTimeout(timeout);
                 pay_active()
             }
             if(id === 'pay'){
                 make_inactive('find');
                 make_inactive('hire');
-                document.getElementById('btn_description').innerHTML = 'Здесь вбивай текст описания кнопки Заплатить';
+                document.getElementById('btn_description').innerHTML = 'Мы заботимся о вас. Мы заключаем контракты и проводим оплату. Так вы будете знать наверняка, что всё сделано в соответствии с законодательством. Мы предлагаем разные способы оплаты, включая криптовалюты. Мы гарантируем безопасность при использовании функции "Безопасная сделка".';
                 clearTimeout(timeout);
                 find_active()
             }
