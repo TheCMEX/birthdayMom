@@ -92,22 +92,50 @@
                 <div class="row">
                     <div class="col-xl-7">
                         <div class="threeButtons">
-                            <button class="btn threeButtons col-3 firstButton">Найти</button>
-
-                            <button class="btn threeButtons col-3 firstButton">Нанять</button>
-                            <button class="btn headerButtonNeedHelp threeButtons col-3">Заплатить</button>
+                            <button id="find" onclick="make_active('find')" class="btn headerButtonNeedHelp threeButtons col-3 firstButton">Найти</button>
+                            <button id="hire" onclick="make_active('hire')" class="btn threeButtons col-3 firstButton">Нанять</button>
+                            <button id="pay" onclick="make_active('pay')" class="btn threeButtons col-3">Заплатить</button>
                         </div>
-                    <div class="col-xl-5"></div>
+                    <div id="btn_description" class="col-xl-5">Здесь вбивай текст описания кнопки Найти</div>
                 </div>
             </div>
             <div class="col-xl-2"></div>
         </div>
     </div>
+    <script type="text/javascript">
 
+        var change_time = 6000;
 
+        function make_active(id) {
+            var classes = document.getElementById(id).getAttribute('class');
+            document.getElementById(id).setAttribute('class', classes + ' headerButtonNeedHelp');
+            if(id === 'find'){
+                make_inactive('hire');
+                make_inactive('pay');
+                document.getElementById('btn_description').innerHTML = 'Здесь вбивай текст описания кнопки Найти';
+            }
+            if(id === 'hire'){
+                make_inactive('find');
+                make_inactive('pay');
+                document.getElementById('btn_description').innerHTML = 'Здесь вбивай текст описания кнопки Нанять';
+            }
+            if(id === 'pay'){
+                make_inactive('find');
+                make_inactive('hire');
+                document.getElementById('btn_description').innerHTML = 'Здесь вбивай текст описания кнопки Заплатить';
+            }
+        }
+
+        function make_inactive(id) {
+            var classes = document.getElementById(id).getAttribute('class');
+            classes = classes.replace(' headerButtonNeedHelp', '');
+            document.getElementById(id).setAttribute('class', classes)
+        }
+    </script>
     <!-- Здесь делаем кнопочки соц сетей вверху страницы -->
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a9827c774296c20"></script>
+
 
     <!-- Подключаем jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
