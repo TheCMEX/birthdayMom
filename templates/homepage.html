@@ -1,144 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
+    <!-- Настройка кодировки -->
     <meta charset="UTF-8">
-    <title>Grandoxin</title>
-    <link rel="stylesheet" href="/static/css/stylesheet.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Настройка viewport -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Подключаем основной файл стилей -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Подключаем Boostrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap4/bootstrap.min.css">
+    <title>TeensJob</title>
 </head>
-<body>
-<div class="header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-1"></div>
-            <div class="col-xl-10 col-lg-12" style="padding: 0; text-align: center">
-                <p class="headerTitle">С днём Рождения, любимая мамочка!</p>
-                <p class="headerTitle" style="font-size: 4vw">Я очень тебя люблю. Это для тебя!</p>
-            </div>
-            <div class="col-xl-1"></div>
-        </div>
-    </div>
-</div>
-<div class="brothers">
-    <div class="container-fluid"
-         style="background-color: rgba(0, 0, 0, .5); text-align: left; padding-top: 10.5%; padding-bottom: 200%">
-        <div class="row">
-            <div class="col-xl-1"></div>
-            <div class="col-xl-10 col-lg-12 wow fadeInRight">
-                <p class="headerTitle" style="font-size: 4vw">Искренне тебя поздравляем :)</p>
-                <p class="headerTitle" style="font-size: 3vw">Желаем всего самого-самого хорошего: здоровья, примерных
-                    детей, любви и еще кучу-кучу всяких банальностей. Но самое главное - счастья!</p>
-            </div>
-            <div class="col-xl-1"></div>
-        </div>
-    </div>
-</div>
-<div class="family headerTitle">
-    <div class="container-fluid"
-         style="background-color: rgba(0, 0, 0, .5); text-align: right; padding-top: 10.5%; padding-bottom: 200%; font-size: 3vw">
-        <div class="row">
-            <div class="col-xl-1"></div>
-            <div class="col-xl-10 col-lg-12 wow fadeInLeft">
-                <p class="headerTitle">Ты наш главный наставник и учитель уже...</p>
-                <div class="row" style="margin-top: 7%">
-                    <div class="col-lg-4">
-                        <p><span class="spincrement">38</span><span
-                                style="margin-left: 5%; font-size: 3vw">лет</span></p>
-                        <p><span style="color: orange">Столько тебе!</span></p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p><span class="spincrement">17.5</span><span
-                                style="margin-left: 5%; font-size: 3vw">лет</span>
-                        </p>
-                        <p><span style="color: orange">Столько твоему старшему!</span></p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p><span class="spincrement">9</span><span
-                                style="margin-left: 1%; font-size: 3vw;"> лет</span></p>
-                        <p><span style="color: orange">Столько твоему младшему!</span></p>
+<body style="font-family: DINPro-Regular">
+<!-- Поле с логотипом и региcтрацией вверху сайта -->
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-2 col-lg-2">
+                    <a href="#"><img class="teensJobLogo" width="270" src="/static/img/TeensJob_logo.png" alt=""></a>
+                </div>
+                <div class="col-xl col-lg-5 headerButtons">
+                    <div class="row">
+                        <div class="col-xl-2"></div>
+                        <div class="col-xl col-lg text-right headerNeedButtons">
+                            <a class="btn btn-block headerButtonNeedWork" href="#" role="button">ХОЧУ ЗАРАБАТЫВАТЬ</a>
+                        </div>
+                        <div class="col-xl col-lg text-right headerNeedButtons">
+                            <a class="btn btn-block headerButtonNeedHelp" href="#" role="button">НУЖЕН ИСПОЛНИТЕЛЬ</a>
+                        </div>
                     </div>
                 </div>
+                <div class="col-xl-2"></div>
             </div>
-            <div class="col-xl-1"></div>
         </div>
     </div>
-</div>
-<div class="yura">
-    <div class="container-fluid"
-         style="background-color: rgba(0, 0, 0, .5); text-align: left; padding-top: 27%; padding-bottom: 200%">
-        <div class="row">
-            <div class="col-xl-1"></div>
-            <div class="col-xl-10 col-lg-12 wow fadeInRight">
-                <p class="headerTitle">Со временем мы взрослеем...</p>
 
-            </div>
-            <div class="col-xl-1"></div>
-        </div>
-    </div>
-</div>
-<div class="mark">
-    <div class="container-fluid"
-         style="background-color: rgba(0, 0, 0, .5); text-align: left; padding-top: 20%; padding-bottom: 200%">
-        <div class="row">
-            <div class="col-xl-1"></div>
-            <div class="col-xl-10 col-lg-12 wow fadeInLeft">
-                <p class="headerTitle">Но всё же что-то остаётся вечным ;)</p>
-            </div>
-            <div class="col-xl-1"></div>
-        </div>
-    </div>
-</div>
-<div class="love">
-    <div class="container-fluid"
-         style="background-color: rgba(0, 0, 0, .5); text-align: left; padding-top: 30%; padding-bottom: 200%">
-        <div class="row">
-            <div class="col-xl-1"></div>
-            <div class="col-xl-10 col-lg-12 wow rubberBand">
-                <p class="headerTitle">И это наша к тебе любовь <3</p>
-            </div>
-            <div class="col-xl-1"></div>
-        </div>
-    </div>
-</div>
-<div class="latest">
-    <div class="container-fluid"
-         style="background-color: rgba(0, 0, 0, .5); text-align: left;">
-        <div class="row">
-            <div class="col-xl-1"></div>
-            <div class="col-xl-10 col-lg-12 wow pulse" style=" padding-top: 10%; padding-bottom: 185%">
-                <p class="headerTitle">Просто спасибо тебе за то, что ты у нас есть.</p>
-                <p class="headerTitle">С праздником!</p>
-            </div>
-            <div class="col-xl-1"></div>
-        </div>
-    </div>
-</div>
-<div class="footer" style="background-color: rgba(0, 0, 0, .85); color: white; font-size: 2vw">
-    P.S. Нужен сайт? Обращайся;) yuravilenskiy@gmail.com
-</div>
+<!-- Главная часть сайта с фотографией -->
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-<script src="/static/js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
-{% block javascript %}
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/static/js/jquery.spincrement.min.js"></script>
-    <script type="text/javascript" src="/static/js/common.js"></script>
-{% endblock %}
+    <div class="containerPhoto">
+        <img class="bgPhoto" src="/static/img/backgroundFirstPagePhoto.jpg" alt="">
+        <div class="contentOnPhoto">
+            <div class="row">
+                <div class="col-xl-2 leftRightNavbar"></div>
+                <div class="col-xl-8 navbarPadding">
+                    <!-- Меню -->
+                    <ul class="nav nav-pills nav-fill">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ИСПОЛНИТЕЛИ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ПРЕДЛОЖЕНИЯ О РАБОТЕ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">СОЗДАТЬ ПРЕДЛОЖЕНИЕ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">КОНТАКТЫ</a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 leftRightNavbar"></div>
+            </div>
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8">
+                    <!-- Заголовки -->
+                    <div class="titles">
+                        <p>Нужен помощник?</p>
+                        <p class="underTitle">Мы уже нашли его!</p>
+                    </div>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2 col-4" type="search" placeholder="Какого рода работу нужно выполнить?" aria-label="Search">
+                        <button class="btn col-1 searchSubmitButton my-2 my-sm-0" type="submit">НАЧАТЬ!</button>
+                    </form>
+                    <p class="forExample">Например: уборка дома</p>
+                </div>
+                <div class="col-xl-2"></div>
+            </div>
+        </div>
+    </div>
+
+<!-- Блок с
+
+
+
+    <!-- Здесь делаем кнопочки соц сетей вверху страницы -->
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a9827c774296c20"></script>
+
+    <!-- Подключаем jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Подключаем плагин Popper (необходим для работы компонента Dropdown и др.) -->
+    <script src="/static/js/bootstrap4/bootstrap.bundle.min.js"></script>
 </body>
 </html>

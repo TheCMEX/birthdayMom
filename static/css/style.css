@@ -1,0 +1,198 @@
+    /*Настройка шрифтов*/
+@font-face {
+    font-family: MotorOil; /* Гарнитура шрифта */
+    src: url(/static/fonts/MotorOil1937M54.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Circle75; /* Гарнитура шрифта */
+    src: url(/static/fonts/Circle75); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Circle55; /* Гарнитура шрифта */
+    src: url(/static/fonts/Circle55.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: DINPro-Regular; /* Гарнитура шрифта */
+    src: url(/static/fonts/DINPro-Regular.otf); /* Путь к файлу со шрифтом */
+}
+
+
+/*HEADER*/
+
+.header{
+  padding-top: 1%;
+}
+
+/*Настраиваем кнопки в шапка сайта*/
+.headerButtons{
+    font-size: 1.2vw;
+    margin-top: 1.1%;
+    margin-bottom: 0.5%;
+}
+.headerButtons span{
+    margin-right: 12%;
+}
+.headerNeedButtons a{
+    color: white;
+    /*padding-left: 5%;*/
+    /*padding-right: 5%;*/
+    border-radius: 6px;
+    font-size: 1vw;
+}
+.headerNeedButtons a:hover{
+    color: white;
+}
+.registration{
+    color: #239ebd  ;
+}
+.logIn{
+    color: #ed621d;
+}
+/*Кнопка нужна подработка*/
+.headerButtonNeedWork{
+    margin-right: 2%;
+    background: #239ebd; /* Old Browsers */
+background: -webkit-linear-gradient(top,#239ebd,#1a81aa); /*Safari 5.1-6*/
+background: -o-linear-gradient(top,#239ebd,#1a81aa); /*Opera 11.1-12*/
+background: -moz-linear-gradient(top,#239ebd,#1a81aa); /*Fx 3.6-15*/
+background: linear-gradient(to bottom, #239ebd, #1a81aa); /*Standard*/
+}
+.headerButtonNeedWork:hover{
+    background: #1885a0; /* Old Browsers */
+background: -webkit-linear-gradient(top,#1885a0,#146d91); /*Safari 5.1-6*/
+background: -o-linear-gradient(top,#1885a0,#146d91); /*Opera 11.1-12*/
+background: -moz-linear-gradient(top,#1885a0,#146d91); /*Fx 3.6-15*/
+background: linear-gradient(to bottom, #1885a0, #146d91); /*Standard*/
+}
+/*Кнопка нужен исполнитель*/
+.headerButtonNeedHelp{
+background: #f46521; /* Old Browsers */
+background: -webkit-linear-gradient(top,#f46521,#c43817); /*Safari 5.1-6*/
+background: -o-linear-gradient(top,#f46521,#c43817); /*Opera 11.1-12*/
+background: -moz-linear-gradient(top,#f46521,#c43817); /*Fx 3.6-15*/
+background: linear-gradient(to bottom, #f46521, #c43817); /*Standard*/
+}
+.headerButtonNeedHelp:hover{
+background: #d95a1b; /* Old Browsers */
+background: -webkit-linear-gradient(top,#d95a1b,#af3a18); /*Safari 5.1-6*/
+background: -o-linear-gradient(top,#d95a1b,#af3a18); /*Opera 11.1-12*/
+background: -moz-linear-gradient(top,#d95a1b,#af3a18); /*Fx 3.6-15*/
+background: linear-gradient(to bottom, #d95a1b, #af3a18); /*Standard*/
+}
+
+
+/*CONTAINER PHOTO*/
+
+.contentOnPhoto{
+    position: relative;
+    padding-top: 0.5%;
+}
+/*Настраиваем картинку на заднем фоне    */
+img.bgPhoto{
+    width: 100%;
+    position: absolute;
+}
+
+/*Настраиваем меню*/
+.nav{
+    /*margin-top: 1%;*/
+    background: rgba(255, 255, 255, .7);
+}
+.nav-link {
+    color: black;
+    font-size: 0.95vw;
+}
+.nav-link:hover{
+    color: #ed621d;
+}
+.leftRightNavbar{
+    background: rgba(255, 255, 255, .7);
+    padding-right: 0;
+}
+.col-xl-8.navbarPadding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.titles{
+    padding-top: 9.5%;
+    font-family: Circle75;
+    font-size: 3.5vw;
+}
+.underTitle{
+    font-family: Circle55;
+    font-size: 3vw;
+    line-height: 0.2em;
+}
+
+/*Форма поиска*/
+form{
+    margin-top: 10%;
+}
+.searchSubmitButton{
+    background: #259db8; /* Old Browsers */
+    background: -webkit-linear-gradient(top,#259db8,#1e7fb6); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,#259db8,#1e7fb6); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,#259db8,#1e7fb6); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, #259db8, #1e7fb6); /*Standard*/
+    color: white;
+}
+.searchSubmitButton:hover{
+    background: #2392ab; /* Old Browsers */
+    background: -webkit-linear-gradient(top,#2392ab,#1a76a9); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,#2392ab,#1a76a9); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,#2392ab,#1a76a9); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, #2392ab, #1a76a9); /*Standard*/
+
+}
+/*Картинка в форму поиска*/
+input{
+    background: url("/static/img/search.svg") no-repeat right;
+    background-size: 6%;
+}
+/*Настраиваем размер текста в плейсхолдере*/
+::-webkit-input-placeholder {
+   font-size: 1vw;
+}
+:-moz-placeholder { /* Firefox 18- */
+      font-size: 1vw;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+      font-size: 1vw;
+}
+:-ms-input-placeholder {
+      font-size: 1vw;
+}
+
+.forExample{
+    font-size: 0.83vw;
+}
+
+
+/*Медиа запросы*/
+@media screen and (min-width: 1200px) {
+    body{
+        /*padding-right: 5%;*/
+        /*padding-left: 5%;*/
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    body{
+        /*padding-left: 4%;*/
+        /*padding-right: 4%;*/
+    }
+}
+
+@media screen and (max-width: 991px){
+    body{
+        /*padding-right: 2%;*/
+        /*padding-left: 2%;*/
+    }
+}
+
+@media screen and (max-width: 767px){
+    body{
+        /*padding-right: 0;*/
+        /*padding-left: 0;*/
+    }
+}
